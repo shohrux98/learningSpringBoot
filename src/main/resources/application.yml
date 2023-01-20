@@ -1,0 +1,18 @@
+server:
+  port: 8087
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mohirdev
+    username: mohirdev
+    password: 123
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL92Dialect
+    hibernate:
+      ddl-auto: update
+
+upload:
+  server:
+    folder: D:\spring\mohirdev\src\main\resources\upload
